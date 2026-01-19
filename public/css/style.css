@@ -187,3 +187,79 @@ span {
         opacity: 0.7;
     }
 }
+
+.first-section{
+    height: 80vh;
+    padding-top: 15vh;
+    display: flex;
+    gap: 12vw;
+    padding-inline: 6vw;
+    align-items: center;
+}
+
+.first-section div h1{
+    line-height: 1.4;
+    font-family: "Rock Salt", cursive;
+    font-size: 3vw;
+    font-weight: 300;
+    color: #000000ba;
+}
+
+.first-section div p{
+    font-size: 1.3vw;
+    color: #000000ba;
+}
+
+.first-section button{
+    width: 10vw;
+    height: 5vh;
+    background-color: #cc1313;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.first-section button:hover{
+    background-color: #d12626;
+}
+
+.first-section-btn{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.first-section-btn p i{
+    color: #d31b1b;
+}
+
+@media (max-width: 768px) {
+    .first-section{
+        height: 80vh;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-inline: 6vw;
+        padding-top: 100vh;
+    }
+    .first-section-div{
+       display: flex;
+       flex-direction: column;
+       width: 90vw;
+    }
+    .first-section div h1{
+        font-size: 5vw;
+    }
+    .first-section div p{
+        font-size: 2.5vw;
+    }
+    .first-section-btn button{
+    width: 20vw;
+    height: 7vh;
+    }
+    .first-section-btn p{
+    width: 20vw;
+    }
+}
+
