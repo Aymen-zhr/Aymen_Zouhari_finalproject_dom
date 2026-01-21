@@ -124,7 +124,6 @@ span {
 
 @media (max-width: 768px) {
     header {
-        /* gap: 5vw; */
         display: flex;
         gap: 50%;
         padding-left: 0vw;
@@ -254,6 +253,10 @@ span {
     font-size: 1.3vw;
     font-weight: 500;
     color: #4d4d4dba;
+}
+.first-section div img {
+    width: 75%;
+    padding-left: 5vw;
 }
 
 .first-section button {
@@ -1187,11 +1190,49 @@ span {
     color: #cc1313;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6vw 6vh 6vw;
+    border-bottom: 1px solid #3b3b3b;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
 .chefs-container {
     display: flex;
     justify-content: center;
     gap: 2.5vw;
     flex-wrap: wrap;
+}
+
+.scroll-top {
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background-color: #cc1313;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.scroll-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+}
+
+.scroll-top:hover {
+    background-color: #e61c1c;
+    color: #fff;
 }
 
 .chef-card {
@@ -1791,5 +1832,140 @@ span {
 @media (max-width: 428px) {
     .contact-header h2 {
         font-size: 6vw;
+    }
+}
+
+.footer {
+    background-color: #1f1f24;
+    color: #fff;
+    font-size: 0.9vw;
+    padding-top: 6vh;
+}
+
+.footer-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1vw;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-icon {
+    font-size: 1.5vw;
+    color: #cc1313;
+    margin-right: 0.5vw;
+    margin-top: 0.3vh;
+}
+
+.footer-text h4 {
+    font-size: 1.1vw;
+    font-weight: 700;
+    margin-bottom: 1vh;
+    color: #fff;
+}
+
+.footer-text p {
+    color: #8b8b95;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Social Links in Footer */
+.footer-social-links {
+    display: flex;
+    gap: 1vw;
+    margin-top: 1vh;
+}
+
+.footer-social-links a {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid #3b3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b8b95;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    color: #fff;
+    border-color: #cc1313;
+    background-color: #cc1313;
+}
+
+.footer-social-links i {
+    font-size: 1.2vw;
+}
+
+/* Copyright */
+.footer-copyright {
+    text-align: center;
+    padding: 3vh 0;
+    color: #fff;
+}
+
+.footer-copyright p {
+    margin: 0.5vh 0;
+}
+
+.footer-copyright strong span {
+    color: #cc1313;
+}
+
+.credits {
+    font-size: 0.8vw;
+    color: #8b8b95;
+}
+
+.credits a {
+    color: #cc1313;
+    text-decoration: none;
+}
+
+/* Responsive Footer adjustments */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 2.5vw;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 4vh;
+        padding-bottom: 4vh;
+    }
+
+    .footer-icon {
+        font-size: 4vw;
+        margin-right: 2vw;
+    }
+
+    .footer-text h4 {
+        font-size: 3.5vw;
+    }
+
+    .footer-social-links {
+        gap: 3vw;
+    }
+
+    .footer-social-links a {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .footer-social-links i {
+        font-size: 3.5vw;
+    }
+
+    .credits {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 428px) {
+    .footer-item {
+        width: 100%;
     }
 }
