@@ -14,6 +14,7 @@ header {
     width: 100%;
     height: 12vh;
     background-color: #fff;
+    z-index: 100;
 }
 
 .logo {
@@ -727,10 +728,6 @@ span {
         height: 40vh;
     }
 
-    .stats-overlay {
-        flex-wrap: wrap;
-        padding: 4vh 4vw;
-    }
 
     .stat-item {
         width: 50%;
@@ -746,3 +743,189 @@ span {
         font-size: 3vw;
     }
 }
+
+.menu-section {
+    padding: 8vh 6vw;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.menu-header h5 {
+    font-size: 1vw;
+    color: #7f7f90;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1vh;
+}
+
+.menu-header h2 {
+    font-size: 2.5vw;
+    color: #2c2c2c;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+}
+
+.menu-header h2 span {
+    color: #cc1313;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-bottom: 5vh;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    font-size: 1.2vw;
+    color: #2c2c2c;
+    cursor: pointer;
+    padding: 1vh 0;
+    position: relative;
+    transition: color 0.3s ease;
+    font-weight: 400;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+    color: #cc1313;
+}
+
+.tab-btn.active {
+    color: #2c2c2c;
+    border-bottom: 2px solid #2c2c2c;
+}
+
+
+.menu-label {
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.menu-label p {
+    font-size: 0.9vw;
+    color: #7f7f90;
+    text-transform: uppercase;
+    margin-bottom: 0.5vh;
+}
+
+.menu-label h3 {
+    font-size: 2vw;
+    color: #cc1313;
+    font-family: 'Rock Salt', cursive;
+    font-weight: 400;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    text-align: center;
+    padding: 2vw;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+    object-fit: cover;
+}
+
+.menu-item h4 {
+    font-size: 1.3vw;
+    color: #2c2c2c;
+    margin-bottom: 1vh;
+    font-weight: 600;
+}
+
+.menu-description {
+    font-size: 0.9vw;
+    color: #7f7f90;
+    margin-bottom: 1vh;
+    font-style: italic;
+}
+
+.menu-price {
+    font-size: 1.5vw;
+    color: #cc1313;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .menu-section {
+        padding: 5vh 4vw;
+    }
+
+    .menu-header h5 {
+        font-size: 2.5vw;
+    }
+
+    .menu-header h2 {
+        font-size: 5vw;
+    }
+
+    .menu-tabs {
+        gap: 4vw;
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        font-size: 3vw;
+        padding: 1vh 3vw;
+    }
+
+    .menu-label p {
+        font-size: 2.5vw;
+    }
+
+    .menu-label h3 {
+        font-size: 5vw;
+    }
+
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4vw;
+    }
+
+    .menu-item h4 {
+        font-size: 3.5vw;
+    }
+
+    .menu-description {
+        font-size: 2.5vw;
+    }
+
+    .menu-price {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 428px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-header h2 {
+        font-size: 6vw;
+    }
+
+    .tab-btn {
+        font-size: 3.5vw;
+    }
+}
+
