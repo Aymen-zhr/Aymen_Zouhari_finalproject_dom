@@ -254,6 +254,7 @@ span {
     font-weight: 500;
     color: #4d4d4dba;
 }
+
 .first-section div img {
     width: 75%;
     padding-left: 5vw;
@@ -290,7 +291,7 @@ span {
         display: flex;
         flex-direction: column-reverse;
         padding-inline: 6vw;
-        padding-top: 90vh;
+        padding-top: 170vh;
     }
 
     .first-section-div {
@@ -324,6 +325,7 @@ span {
 @media (max-width: 428px) {
     .first-section {
         padding-top: 25vh;
+        height: 100vh;
     }
 
     .first-section div h1 {
@@ -1764,7 +1766,7 @@ span {
     background-color: #e61c1c;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .contact-section {
         padding: 5vh 4vw;
@@ -1870,7 +1872,7 @@ span {
     margin: 0;
 }
 
-/* Social Links in Footer */
+
 .footer-social-links {
     display: flex;
     gap: 1vw;
@@ -1900,7 +1902,7 @@ span {
     font-size: 1.2vw;
 }
 
-/* Copyright */
+
 .footer-copyright {
     text-align: center;
     padding: 3vh 0;
@@ -1925,7 +1927,7 @@ span {
     text-decoration: none;
 }
 
-/* Responsive Footer adjustments */
+
 @media (max-width: 768px) {
     .footer {
         font-size: 2.5vw;
